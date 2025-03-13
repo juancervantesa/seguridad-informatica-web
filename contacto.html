@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Centro de Seguridad Informática</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto - Centro de Seguridad Informática</h1>
+        <img src="img/contacto.jpg" alt="Imagen de contacto y soporte" width="400" />
+        <p>Estamos aquí para responder tus consultas sobre seguridad</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="amenazas.html">Amenazas comunes</a></li>
+            <li><a href="proteccion.html">Métodos de protección</a></li>
+            <li><a href="recursos.html">Recursos y herramientas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Ponte en contacto con nuestro equipo de expertos</h2>
+            <p>Si tienes cualquier pregunta sobre seguridad informática, necesitas asesoramiento personalizado o quieres reportar un incidente, no dudes en contactarnos. Nuestro equipo de especialistas está listo para ayudarte.</p>
+        </section>
+
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form action="procesar_formulario.php" method="post">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <div>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div>
+                        <label for="empresa">Empresa/Organización:</label>
+                        <input type="text" id="empresa" name="empresa">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles de la consulta</legend>
+                    <div>
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                    </div>
+                    <div>
+                        <label for="tipo_consulta">Tipo de consulta:</label>
+                        <select id="tipo_consulta" name="tipo_consulta">
+                            <option value="informacion">Solicitud de información</option>
+                            <option value="asesoria">Asesoría técnica</option>
+                            <option value="incidente">Reporte de incidente</option>
+                            <option value="formacion">Formación y capacitación</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <label for="urgencia">Nivel de urgencia:</label>
+                        <input type="range" id="urgencia" name="urgencia" min="1" max="5" value="3">
+                    </div>
+                </fieldset>
+
+                <div>
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">He leído y acepto la política de privacidad</label>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar consulta</button>
+                    <button type="reset">Limpiar formulario</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Información de contacto</h2>
+            <div>
+                <h3>Horario de atención</h3>
+                <p>Lunes a viernes: 9:00 - 18:00</p>
+                <p>Para incidentes críticos, disponemos de soporte 24/7 en el teléfono de emergencias.</p>
+            </div>
+            
+            <div>
+                <h3>Ubicación</h3>
+                <address>
+                    Centro de Seguridad Informática<br>
+                    Calle Colombia S/N <br>
+                    Potosí, Bolivia
+                </address>
+                
+            </div>
+        </section>
+
+        <section>
+            <h2>Canales de soporte</h2>
+            <div>
+                <h3>Soporte técnico</h3>
+                <p>Para consultas técnicas y asistencia:</p>
+                <p>Email: <a href="mailto:soporte@seguridadinformatica.com">soporte@seguridadinformatica.com</a></p>
+                <p>Teléfono emergencias: +591 7242**** (24/7)</p>
+            </div>
+            
+            <div>
+                <h3>Reporte de incidentes</h3>
+                <p>Para comunicar incidentes de seguridad:</p>
+                <p>Email: <a href="mailto:incidentes@seguridadinformatica.com">incidentes@seguridadinformatica.com</a></p>
+                <p>Teléfono emergencias: +591 7241**** (24/7)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Centro de Seguridad Informática. Todos los derechos reservados.</p>
+        <address>
+            Contacto: <a href="mailto:info@seguridadinformatica.com">info@seguridadinformatica.com</a><br>
+            Teléfono: +591 724*****<br>
+            Dirección: Calle Colombia S/N, Potosí, Bolivia
+        </address>
+    </footer>
+</body>
+</html>
